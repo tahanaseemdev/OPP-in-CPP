@@ -17,8 +17,12 @@ public:
     double publicMemberFunction(double radius)
     {
         calculate(radius);
-        cout << "Area is " << area << "\n";
-        cout << "Circumference is " << circumference;
+    }
+    double getArea(){
+        return area;
+    }
+    double getCircumference(){
+        return circumference;
     }
 };
 int main()
@@ -28,4 +32,6 @@ int main()
     cout << "Enter radius ";
     cin >> radius;
     obj.publicMemberFunction(radius);
+    cout << "Area is " << obj.getArea() << "\n";
+    cout << "Circumference is " << obj.getCircumference();
 }
