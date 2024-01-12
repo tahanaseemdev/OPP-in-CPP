@@ -16,7 +16,7 @@ class circle
 public:
     double publicMemberFunction(double radius)
     {
-        calculate(radius);
+        calculate(radius);              
     }
     double getArea(){
         return area;
